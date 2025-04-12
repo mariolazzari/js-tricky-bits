@@ -1,1 +1,7 @@
-# js-tricky-bits
+# JavaScript: the tricky bits
+
+## Improving loops
+
+- 0 index
+- global var
+- local var
