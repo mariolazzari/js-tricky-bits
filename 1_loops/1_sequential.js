@@ -1,6 +1,8 @@
 (function () {
+  "use strict";
+
   // Simple array
-  const band = [
+  var band = [
     "Renee Rosnes",
     "Anat Cohen",
     "Melissa Aldana",
@@ -10,13 +12,26 @@
     "Cécile McLorin Salvant",
   ];
 
-  for (let i = 0; i < band.length; i++) {
-    const member = band[i];
-    console.log(member);
+  for (var member of band) {
+    // Nice!
   }
 
+  // band.forEach(function (member) {
+  //     console.log("Introducing…", member);
+  // });
+
+  band.every(function (member) {
+    console.log("Introducing…", member);
+
+    if (member === "Ingrid Jensen") {
+      return false;
+    }
+
+    return true;
+  });
+
   // Nested array
-  const bands = [
+  var bands = [
     [
       "Renee Rosnes",
       "Anat Cohen",
@@ -36,11 +51,17 @@
     ["Chick Corea", "Miroslav Vitous", "Roy Haynes"],
   ];
 
-  for (let b = 0; b < bands.length; b++) {
-    const band = bands[b];
+  for (var b = 0; b < bands.length; b++) {
+    var band = bands[b];
 
-    for (let c = 0; c < band.length; c++) {
-      console.log(c);
-    }
+    for (var c = 0; c < band.length; c++) {}
   }
+
+  // bands.forEach(function (band, index) {
+  //     console.log("Introducing band", index);
+
+  //     band.forEach(function (member) {
+  //         console.log("Introducing…", member);
+  //     });
+  // });
 })();
