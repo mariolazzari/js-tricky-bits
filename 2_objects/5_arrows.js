@@ -1,0 +1,27 @@
+Drupal = { behaviors: {} };
+
+(function (Drupal) {
+  Drupal.behaviors.myModule = {
+    url: "http://www.example.com",
+
+    getData: function () {
+      console.log("Let's get data from ", this.url);
+    },
+
+    attach: function () {
+      const btn = document.querySelector("#go");
+
+      btn.addEventListener("click", evt => {
+        evt.preventDefault();
+
+        this.getData();
+      });
+    },
+  };
+
+  // Invoke all the behaviors
+  Object.keys(Drupal.behaviors).every(function (behaviorName) {
+    Drupal.behaviors[behaviorName].attach();
+    return true;
+  });
+})(Drupal);

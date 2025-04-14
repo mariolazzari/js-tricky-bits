@@ -11,3 +11,5 @@
 - copies
 - this
 - bind
+- arrow functions
+
