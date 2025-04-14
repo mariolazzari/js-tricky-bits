@@ -9,3 +9,5 @@
 ## Objects
 
 - copies
+- this
+- bind
