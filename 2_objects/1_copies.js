@@ -15,11 +15,13 @@
     },
   };
 
+  // JSON
   const mudge = JSON.parse(JSON.stringify(kitty));
   mudge.name = "Mudge";
   mudge.chipId = "YYZ123";
   // debugger;
 
+  // assing
   const knuckle = Object.assign({}, kitty);
   // knuckle = {...kitty};
   knuckle.name = "Knuckle";
@@ -29,6 +31,7 @@
   };
   // debugger;
 
+  // lodash
   const comma = _.cloneDeep(kitty);
   comma.name = "Comma";
   comma.bestFriend.name = "Dash";
