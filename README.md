@@ -13,3 +13,6 @@
 - bind
 - arrow functions
 
+## Functions
+
+- event handler extra params
