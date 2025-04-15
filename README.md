@@ -17,3 +17,4 @@
 
 - event handler extra params
 - arrays not accepted
+- function signatures
